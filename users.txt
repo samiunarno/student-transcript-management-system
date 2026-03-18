@@ -1,4 +1,2 @@
 admin 1234 admin
 joyi 1111 user
-sam 1234 user
-arno 1234 user
