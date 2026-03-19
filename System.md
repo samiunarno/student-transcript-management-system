@@ -117,7 +117,7 @@ Linked List → saveToFile() → Disk File
 
 Separation of concerns
 
-Login, Data, UI, Storage अलग
+Login, Data, UI, Storage 
 
 Dynamic memory allocation
 
