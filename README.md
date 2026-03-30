@@ -1,78 +1,28 @@
-Transcript Management System Based on Linked List Data Structure
+# Student Transcript Management System (C Language)
 
+## 📌 Project Overview
+This project is a **Student Transcript Management System** developed in **C**. It uses a **singly linked list** as the core data structure to dynamically organize, manage, and process student records in memory. The system is designed to read from and save to text files, allowing for persistent data storage across sessions. 
 
+This project is an extended implementation based on *Example 11.1: Using Files to Save Transcript Data* from the textbook *Fundamentals of Programming (3rd Edition, Chen Juan, Zhang Changhai)*.
 
-Practice Time
+## ⚙️ System Architecture
 
-2026-03-14 09:37 to 2026-04-10 23:30
+The application is built with a modular, menu-driven architecture to ensure robust and user-friendly CLI operations.
 
-
-
-Standard
-
-Students achieve a maximum score of 80 points through multiple practices.
-
-
-
-Upload the C language code of the student transcript management system developed based on the linked list data structure. Requirements:
-
-
-
-1. The programming language is C language.
-
-
-
-2. Based on Example 11.1 Using Files to Save Transcript Data in the textbook Fundamentals of Programming (3rd Edition, Chen Juan, Zhang Changhai), modify it to use a singly linked list to organize and manage transcripts.
-
-
-
-3. The code can read existing raw data (transcripts of several students) from a file; the file path and name are input by the user.
-
-
-
-4. It must include core operations of student transcript management:
-
-
-
-◦ Sort transcripts by student ID, subject score, total score, etc.
-
-
-
-◦ Add, modify or delete one or more students' transcripts.
-
-
-
-◦ Query transcripts by conditions.
-
-
-
-5. The transcript shall include student ID, name, and scores of at least 5 courses.
-
-
-
-6. When the program ends, the modified data can be saved back to a file; the file path and name are input by the user.
-
-
-
-7. The file can be a text file or binary file (choose either one).
-
-
-
-8. The code must be runnable, user-friendly and robust.
-
+```text
 +---------------------+
 |     User (CLI)      |
 +----------+----------+
            |
            v
 +---------------------+
-|   Login Module      |
+|   Login Module      |  <-- Validates user credentials (users.txt)
 | (validateUser)      |
 +----------+----------+
            |
            v
 +---------------------+
-|   Main Menu System  |
+|   Main Menu System  |  <-- Routes commands to core operations
 | (menu function)     |
 +----------+----------+
            |
@@ -86,13 +36,12 @@ Upload the C language code of the student transcript management system developed
            |
            v
 +---------------------+
-| Linked List Storage |
+| Linked List Storage |  <-- Dynamic memory management (Singly Linked List)
 | (Student Nodes)     |
 +----------+----------+
            |
            v
 +---------------------+
-| File System (Disk)  |
-| students.txt        |
-| users.txt           |
+| File System (Disk)  |  <-- Persistent storage
+| transcripts.txt     |
 +---------------------+
